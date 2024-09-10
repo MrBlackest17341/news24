@@ -1,0 +1,80 @@
+.commFormCover {
+	background: #fafafa;/* ЦВЕТ ФОНА */
+	border-radius: 16px;/* РАДИУС СКРУГЛЕНИЯ УГЛОВ БЛОКА КОММЕНТАРИЯ */
+	width: 100%;
+	max-width: 600px;/* МАКСИМАЛЬНАЯ ШИРИНА БЛОКА КОММЕНТАРИЕВ */
+}
+
+.commForm button {
+	font-size: 15px;/* РАЗМЕР ШРИФТА КНОПКИ */
+	background: rgb(204, 0, 0);/* ЦВЕТ КНОПКИ */
+	color: #fff;/* ЦВЕТ ТЕКСТА КНОПКИ */
+	border-radius: 30px;/* РАДИУС СКРУГЛЕНИЯ УГЛОВ КНОПКИ */
+}
+
+.commForm input, .commForm textarea {
+	font-size: 14px!important;/* РАЗМЕР ШРИФТА ПОЛЕЙ ДЛЯ ТЕЛ, ИМЕНИ И ТЕКСТА КОММЕНТАРИЯ */
+	border: 2px solid #dbdfe4;/* ШИРИНА И ЦВЕТ ОБВОДКИ ПОЛЕЙ ДЛЯ ТЕЛ, ИМЕНИ И ТЕКСТА КОММЕНТАРИЯ */
+	border-radius: 16px;/* РАДИУС СКРУГЛЕНИЯ УГЛОВ ПОЛЕЙ ДЛЯ ТЕЛ, ИМЕНИ И ТЕКСТА КОММЕНТАРИЯ */
+}
+
+.commFormCover {
+	margin: 60px auto 30px auto;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 16px;
+	padding: 20px 20px 20px 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.commFormTop {
+	display: flex;
+	justify-content: space-between;
+}
+
+.commFormTop .commFormTopBlock {
+	width: 48%;
+}
+
+.commForm input, .commForm textarea {
+	width: 100%;
+	font-size: 14px!important;
+	font-family: inherit!important;
+	box-sizing: border-box;
+	padding: 10px;
+	resize: none;
+}
+
+.commFormTopBlock p {
+	font-size: 12px;
+	font-weight: bold;
+	display: none;
+}
+
+.commForm button {
+	box-sizing: border-box;
+	padding: 15px;
+	font-weight: bold;
+	border: none;
+	box-shadow: 0px 2px 10px rgba(0,0,0,.1)
+}
+
+@media screen and (max-width: 400px) {
+	.commFormCover {
+		padding: 20px 10px;
+	}
+	.commForm {
+		text-align: center;
+	}
+
+	.commFormTop {
+		flex-direction: column;
+	}
+	.commFormTop .commFormTopBlock {
+		width: 100%;
+	}
+
+	.commFormTop .commFormTopBlock:nth-child(2) {
+		margin-top: 20px;
+	}
+}
